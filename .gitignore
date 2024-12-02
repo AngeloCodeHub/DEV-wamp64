@@ -1,7 +1,6 @@
-
 # root
-/changelog.txt
-/install.txt
+/_Backup
+/*.txt
 /*.bmp
 /*.bat
 /*.msg
@@ -17,8 +16,38 @@
 /files
 /cgi-bin
 /alias
-/apps
 /logs
+
+# apps
+/apps/adminer*
+/apps/phpsysinfo*
+/apps/phpmyadmin*/doc
+/apps/phpmyadmin*/examples
+/apps/phpmyadmin*/js
+/apps/phpmyadmin*/libraries
+/apps/phpmyadmin*/locale
+/apps/phpmyadmin*/setup
+/apps/phpmyadmin*/sql
+/apps/phpmyadmin*/templates
+/apps/phpmyadmin*/themes
+/apps/phpmyadmin*/tmp
+/apps/phpmyadmin*/vendor
+/apps/phpmyadmin*/*.json
+/apps/phpmyadmin*/*log
+/apps/phpmyadmin*/composer.*
+/apps/phpmyadmin*/contributing.md
+/apps/phpmyadmin*/*.ico
+/apps/phpmyadmin*/index.php
+/apps/phpmyadmin*/LICENSE
+/apps/phpmyadmin*/README
+/apps/phpmyadmin*/release-*
+/apps/phpmyadmin*/*.txt
+/apps/phpmyadmin*/show_config_errors.php
+/apps/phpmyadmin*/url.php
+/apps/phpmyadmin*/yarn.lock
+
+# MariaDB
+/bin/MariaDB
 
 # Apache
 /bin/apache/modules_sup
@@ -75,6 +104,3 @@
 /bin/php/*/*.phar
 /bin/php/*/README.*
 /bin/php/*/wampserver.*
-
-
-

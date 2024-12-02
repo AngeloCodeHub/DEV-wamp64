@@ -1,0 +1,20 @@
+﻿<ArrayOfFileSystemMonitor xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <FileSystemMonitor id="cc7f849b-8c62-4f09-b11c-8358e53a6bb2" path="C:\wamp64" userpath="C:\wamp64" description="" enabled="False" snapshot="C:\ProgramData\DirectoryMonitor\AngeloHu\Snapshots\c2c44d75-59a8-44e5-8bbe-fc8c3929b729.snapshot">
+    <Options includeSubdirectories="True" includeProperties="False" includeEventUser="False" includeFiles="True" includeDirectories="False" useSnapshots="False" snapshotInterval="600000" />
+    <Events new="True" renamed="True" modified="True" deleted="True" accessed="False" inactiveTimer="0" inactiveTriggerAllEvents="False" />
+    <Filters>
+      <Exclude pattern="*\logs\*" />
+      <Exclude pattern="*\tmp\*" />
+      <Exclude pattern="*\bin\mysql\mysql8.4.2\data\*" />
+    </Filters>
+    <Credentials />
+    <DevEnterprise.DirectoryMonitor.Plugin.Database provider="0" filePath="" server="" port="0" password="" enabled="False" ssl="" username="" windowsAuth="False" database="" />
+    <DevEnterprise.DirectoryMonitor.Plugin.Emailer afterTime="-1" sizeLimitBytes="1048576" attachmentFilters="" inactivityMinutes="1" useAdvancedSchedule="False" message="&#xD;&#xA;&lt;P&gt;&lt;STRONG&gt;%event%&lt;/STRONG&gt; (%date% %time%): &lt;EM&gt;%fullfile%&lt;/EM&gt; &#xD;&#xA;*%user%*&lt;/P&gt;" attachments="%fullfile%" limitCount="1" sizeLimitEnabled="False" crontab="0 9 * * 1,2,3,4,5" burstCount="500" transferEncoding="" enabled="False" inactivitySeconds="0" limitEnabled="False" rule="1" burstTimeSeconds="30" header="" subject="Directory Monitor: %event% file '%file%' at %date% %time% by %user%" excludeEventTypes="" afterTimeSeconds="604800" limitTime="-1" limitTimeSeconds="1800" footer="" to="" afterCount="1" />
+    <DevEnterprise.DirectoryMonitor.Plugin.ExecuteApplications burstCount="500" limitTimeSeconds="1800" waitForLock="True" execute="" limitEnabled="False" burstTimeSeconds="30" inactivityMinutes="1" limitCount="1" parameters="%fullfile% %event%" sequentialDelay="-1" afterDelay="0" timeout="20" afterCount="1" sequential="False" limitTime="-1" silent="False" rule="1" inactivitySeconds="0" />
+    <DevEnterprise.DirectoryMonitor.Plugin.Growl enabled="False" />
+    <DevEnterprise.DirectoryMonitor.Plugin.Print enabled="False" printer="" />
+    <DevEnterprise.DirectoryMonitor.Plugin.Sounds soundFile="" playUntilFocus="False" />
+    <DevEnterprise.DirectoryMonitor.Plugin.Syslog messageFormat="%event% (%date% %time%): %fullfile% *%user%*" enabled="False" facility="1" level="5" />
+    <DevEnterprise.DirectoryMonitor.Plugin.TextLog outputFormat="%event% (%date% %time%): %fullfile% *%user%*" timestamp="None" logPath="" header="" />
+  </FileSystemMonitor>
+</ArrayOfFileSystemMonitor>
